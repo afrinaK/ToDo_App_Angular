@@ -1,0 +1,23 @@
+<div class="search-bar">
+  <input type="text" placeholder="add task here" [(ngModel)]="addElement" (input)="addFunction()" />
+<!--  //binding of input field with add element-->
+</div>
+
+<button class="add-button" (click)="openAddDialog()">Add</button>
+
+
+
+
+<ul>
+  <li *ngFor="let task of tasks">
+    <input type="checkbox" id="task{{ task.id }}" [(ngModel)]="task.completed" (click)="toggleTaskStatus(task)">
+<!--    //putting task.id in checkbox id   //dynamic binding state of task completed with checkbox status-->
+    <label for="task{{ task.id }}" [ngClass]="{'completed': task.completed}">{{ task.name }}</label>
+<!--    //ng class used for functionality based css-->
+
+  </li>
+</ul>
+
+
+
+

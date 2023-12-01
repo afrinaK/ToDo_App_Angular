@@ -1,0 +1,36 @@
+/* AppComponent's private CSS styles */
+h1 {
+  width: 118px;
+  height: 41px;
+  top: 32px;
+  left: 659px;
+  align: center;
+  padding-left:600px;
+
+  font-family: Raleway;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.045em;
+  text-align: center;
+
+
+
+}
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #42545C;
+}
+nav a:active {
+  background-color: black;
+}
